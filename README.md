@@ -1,2 +1,2 @@
 # kotlin-apps
-Kotlin apps built to learn Kotlin language with Android 
+My experiments built to learn Kotlin language with Android and alone
