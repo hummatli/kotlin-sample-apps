@@ -16,4 +16,32 @@ fun main(args: Array<String>) {
 
     println(pi)
 
+    var myBoolean = 4<7
+
+    println(myBoolean)
+
+
+    //String consatinate
+    var google: String = "Google"
+    val myByte: Byte = 125
+    println(google + " " + myByte)
+
+    //Char data type
+    val c: Char = 'd'
+    println(c)
+
+    //Data type transormation
+    var f2: Float = 4f
+    var d2: Double = 5.5
+
+    d2 = f2.toDouble()
+
+    println(d2)
+
+    
+
+
+
+
+
 }
