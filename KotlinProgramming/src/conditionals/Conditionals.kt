@@ -32,6 +32,23 @@ fun main(args: Array<String>) {
         else -> println("I don't know what to do")
     }
 
+
+    //Complex Conditional statements with when -------------------------------------------
+    println("Complex Conditional statement with when -------------------------")
+    val x = 12
+    when(x){
+        5 -> println("5")
+        is Int -> println("is Int")
+        3*4 -> println("equal to 3*4")
+        "Sattar".length-> println("equal to \"Sattar\".length")
+        in 1..10  -> println("in range 1..10")
+        in 11..20 -> println("in range 11..20")
+        in 11..30 -> println("in range 21..30")
+        !in 0..9 -> println("not in range 0..9")
+    }
+
+
+
     //conditional expression with if -------------------------------------------------
     println("Conditional expression with if ------------------")
 
