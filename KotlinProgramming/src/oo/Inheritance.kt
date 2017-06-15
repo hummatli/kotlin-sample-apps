@@ -23,8 +23,15 @@ open class PersonInherited(open var name: String, open val age: Int) {
     open fun print() = println("Name = $name, Age = $age")
 }
 
+open class PersonInherited2(open var name: String = "SomeMan", open val age: Int  =17) {
+
+}
+
 //Class not ovverirding properties
-class Student1() : PersonInherited(name = "Ali", age = 4)
+class Student11 : PersonInherited2() //We have to open close braces even there are default parameters in constructor
+
+//Class not ovverirding properties
+class Student1 : PersonInherited(name = "Ali", age = 4)
 
 //Class overriding parameters
 class Student2(override var name: String, override val age: Int) : PersonInherited(name, age)
