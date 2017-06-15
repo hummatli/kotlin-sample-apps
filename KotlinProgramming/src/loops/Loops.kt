@@ -14,12 +14,12 @@ fun main(args: Array<String>) {
     println()
 
     val list = listOf("Kotlin", "Java", "Python")
-    for (element in list){
+    for (element in list) {
         print("$element  ")
     }
     println()
 
-    for ((index, value) in list.withIndex()){
+    for ((index, value) in list.withIndex()) {
         println("Element at $index is $value")
     }
 
@@ -27,14 +27,14 @@ fun main(args: Array<String>) {
     println("While loops ------------------------------")
 
     var x = 9
-    while (x >= 0){
+    while (x >= 0) {
         print("$x, ")
         x--
     }
     println()
 
     var i = 1
-    while (i <=10){
+    while (i <= 10) {
         print("$i, ")
         i++
     }
@@ -43,5 +43,21 @@ fun main(args: Array<String>) {
 
     //Continue Break  ----------------------------------
     println("Continue Break ------------------------------")
+    for (c in "Python") {
+        if (c == 'o') {
+            break
+        }
+        print(c)
+    }
+    println()
+
+    val list2 = listOf("Book", "Table", "Laptop")
+    for (str in list2) {
+        if (!str.contains('o')){
+            continue
+        }
+
+        println(str)
+    }
 
 }
