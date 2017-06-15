@@ -30,9 +30,30 @@ fun main(args: Array<String>) {
     }
 
 
-
+    //Lists----------------------------------------
+    println("Lists --------------------")
+    val arrayList = arrayListOf("Ali", "Nargiz", "Sattar")
     val list = listOf("Apple", "Nar", "Heyva")
 
-    val arrayList = arrayListOf("Ali", "Nargiz", "Sattar")
+    println(arrayList.size)
+    println(arrayList[1])
+    println(arrayList + list)
+
+
+    arrayList.add("Murad")
+    arrayList.add(3, "Sebine")
+
+    println(arrayList)
+    arrayList.remove("Sebine")
+    println(arrayList)
+
+    val subList = arrayList.subList(0,3)
+    println(subList)
+
+
+
+
+
+
 
 }
