@@ -26,7 +26,7 @@ class Person(var name: String, val age:Int) {
 }
 
 fun main(args: Array<String>) {
-    val person = Person(age = 30, name = "Sattar")
+    val person = Person("Ali", 3)
     person.speak()
     person.greet("Kotlin World")
 
@@ -37,6 +37,10 @@ fun main(args: Array<String>) {
 
     person.name = "Peter"
     println(person.name)
+
+    //Constructor called with named paramters
+    val person1 = Person(age = 30, name = "Ali")
+    println(person1.name)
 
 }
 

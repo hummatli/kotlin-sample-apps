@@ -40,6 +40,11 @@ fun max(a: Int, b: Int): Int {
     }
 }
 
+//Function with default values
+fun sampleFunWithDefaultVal(a: Int, b: Int = 45, c: Int = 13){
+    println("a = $a, b = $b, c = $c")
+}
+
 //Our main function
 fun main(args: Array<String>) {
     helloWorld()
@@ -48,4 +53,15 @@ fun main(args: Array<String>) {
     println("Current date simple : ${getCurrentDateSimple()}")
     println("Max is ${max(30, 90)}")
     simpleFunc("It's from simple function")
+
+
+    //Called with amed paramteres
+    println("Max is ${max(b=30, a=90)}")
+
+    //Calling function with default val
+    sampleFunWithDefaultVal(3)
+    sampleFunWithDefaultVal(b = 22, a = 90)
+    sampleFunWithDefaultVal(a = 7)
+    sampleFunWithDefaultVal(5, c = 46)
+
 }
