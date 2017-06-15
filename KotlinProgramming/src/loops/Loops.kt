@@ -60,4 +60,17 @@ fun main(args: Array<String>) {
         println(str)
     }
 
+    //Naming loops  ----------------------------------
+    println("Naming loops------------------------------")
+
+    outerLoop@ for (i in 1..10){
+        for (j in 1..10){
+            if (i - j == 5){
+                break@outerLoop
+            }
+
+            println("$i - $j")
+        }
+    }
+
 }
