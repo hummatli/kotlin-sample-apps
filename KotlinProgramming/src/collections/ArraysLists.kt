@@ -29,6 +29,7 @@ fun main(args: Array<String>) {
         println("Does not contain Arizona")
     }
 
+    array.withIndex() //Expression
 
     //Lists----------------------------------------
     println("Lists --------------------")
