@@ -61,8 +61,8 @@ fun main(args: Array<String>) {
 
     //str1!!.length // Twrowgs error. because Sure call has called
 
-
-
-
+    var ss:String //Is correct
+    val dd:String //Is correct
+    dd = "" // Is correct
 
 }

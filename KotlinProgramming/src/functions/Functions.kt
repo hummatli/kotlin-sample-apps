@@ -25,6 +25,12 @@ fun getCurrentDate(): Date {
     return Date()
 }
 
+//simple function
+fun getCurrentDateSimple() = Date()
+
+//simple function
+fun simpleFunc(text: String) = println(text)
+
 //Two parameter, return Int
 fun max(a: Int, b: Int): Int {
     if (a >= b) {
@@ -34,11 +40,12 @@ fun max(a: Int, b: Int): Int {
     }
 }
 
-
 //Our main function
 fun main(args: Array<String>) {
     helloWorld()
     printWithSpaces("I love Kotlin!")
     println("Current date : ${getCurrentDate()}")
+    println("Current date simple : ${getCurrentDateSimple()}")
     println("Max is ${max(30, 90)}")
+    simpleFunc("It's from simple function")
 }
