@@ -8,19 +8,17 @@ import javax.print.DocFlavor
 
 class House //Empty class
 
-class Person{
-    var name:String = "Sattar"
-    var age = 21
+class Person(var name: String, val age:Int) {
 
-    fun speak(){
+    fun speak() {
         println("Hello!")
     }
 
-    fun greet(name: String){
+    fun greet(name: String) {
         println("Hello $name")
     }
 
-    fun getYearOfBirth(): Int{
+    fun getYearOfBirth(): Int {
         return 2017 - age
     }
 
@@ -28,7 +26,7 @@ class Person{
 }
 
 fun main(args: Array<String>) {
-    val person = Person()
+    val person = Person(age = 30, name = "Sattar")
     person.speak()
     person.greet("Kotlin World")
 
