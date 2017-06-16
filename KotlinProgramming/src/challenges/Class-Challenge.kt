@@ -5,27 +5,39 @@ package challenges
  * Class challenge created by me in Kotlin course
  */
 
-class Book {
-    var title: String = "Rich Dad Poor Dad"
-    var author: String = "Kiyosaki"
-    var publicatioYear = 1990
-    var borrowed: Boolean = false
+class Book(val title: String, val author: String, val publicationYear: Int, var borrowed: Boolean) {
 
-    fun borrowedFromMe(){
-        borrowed = true
+    fun borrow(): Boolean {
+        if (!borrowed) {
+            borrowed = true
+            return true
+        } else {
+            println("Sorry this book has already borrowed")
+            return false
+        }
     }
 
-    fun returnedToMe(){
-        borrowed = false
+    fun returnedBook(): Boolean {
+        if (borrowed) {
+            borrowed = false
+            return true
+        } else {
+            println("This book was not borrowed, So cannot be returned")
+            return false
+        }
     }
 
-    fun print(){
-        println("Title: $title, Author: $author, Publication year: $publicatioYear ")
+    fun print() {
+        println("Book [Title: $title, Author: $author, Publication year: $publicationYear]")
     }
 }
 
 fun main(args: Array<String>) {
-    val book = Book()
+    val book = Book(title = "Rich Dad Poor Dad", author = "Kiyosaki", publicationYear = 1990, borrowed = false)
+    book.returnedBook()
+    book.borrow()
+    book.borrow()
+    book.returnedBook()
     book.print()
 }
 
