@@ -23,9 +23,19 @@ class Stack<E>(vararg val items: E) {
     fun isEmpty(): Boolean = elements.isEmpty()
 }
 
+fun <T> stackOf(vararg elements: T): Stack<T> {
+    return Stack(*elements)
+}
 
 fun main(args: Array<String>) {
     val stack = Stack(1, 3, 4, 5, 6) //Burda avtomatik ginerics type parametrin hansi olduqunu goturur
+
+    val stack2 = stackOf("Hi", "Hello", "Bye")
+
+    for (i in 1..3){
+        println(stack2.pop())
+    }
+
 
     stack.push(34)
 
