@@ -1,7 +1,5 @@
 package oo
 
-import javax.print.DocFlavor
-
 /**
  * Created by settar on 6/15/17.
  */

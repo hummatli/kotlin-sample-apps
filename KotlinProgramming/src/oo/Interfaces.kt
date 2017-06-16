@@ -16,7 +16,7 @@ interface Buildable {
     fun build()
 }
 
-class Car(val color:String, override val timeRequared: Int = 120): Driveable, Buildable {
+class Car(val color:Color, override val timeRequared: Int = 120): Driveable, Buildable {
     override fun drive() {
         println("Driving car ...")
     }
@@ -27,7 +27,7 @@ class Car(val color:String, override val timeRequared: Int = 120): Driveable, Bu
 }
 
 
-class MotorCycle(val  color:String): Driveable{
+class MotorCycle(val  color:Color): Driveable{
     override fun drive() {
         println("Driving MotorCycle ...")
     }
@@ -37,10 +37,11 @@ class MotorCycle(val  color:String): Driveable{
 fun main(args: Array<String>) {
 
     //This is Polimorfizm
-    val car:Driveable = Car("Red")
+    val car:Car = Car(Color.RED)
     car.drive()
     car.go()
+    println(car.color)
 
-    val motorcycle: Driveable = MotorCycle("Green")
+    val motorcycle: Driveable = MotorCycle(Color.GREEN)
     motorcycle.drive()
 }
