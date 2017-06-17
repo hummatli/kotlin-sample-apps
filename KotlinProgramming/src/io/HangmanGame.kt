@@ -51,7 +51,7 @@ fun main(args: Array<String>) {
         if (!added) fails++
 
         //Prints explored word
-        printExploredWord(word, correctGuesses)
+        printExploredWordMy(word, correctGuesses)
 
         //Printes guest count
         println("#Wrong guesses: $fails\n\n")
@@ -64,7 +64,7 @@ fun main(args: Array<String>) {
 }
 
 
-fun printExploredWord(word: String, correctGuess: Set<Char>) {
+fun printExploredWordMy(word: String, correctGuess: Set<Char>) {
     val exploredWord = StringBuilder()
     for (i in 0..word.length - 1) {
         if (correctGuess.contains(word[i])) {
