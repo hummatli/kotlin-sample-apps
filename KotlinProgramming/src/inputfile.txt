@@ -1,0 +1,3 @@
+This sample text file
+For file read program
+from Kotlin course by Peter
