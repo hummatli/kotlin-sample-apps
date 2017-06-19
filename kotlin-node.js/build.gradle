@@ -25,13 +25,13 @@ dependencies {
 }
 
 
-//compileKotlin2Js.kotlinOptions {
-//    moduleKind = "commonjs"
-//    outputFile = "node/index.js"
-//}
-
-compileKotlin2Js {
-    kotlinOptions.outputFile = "node/index.js"
-    kotlinOptions.moduleKind = "commonjs"
-    kotlinOptions.sourceMap = true
+compileKotlin2Js.kotlinOptions {
+    moduleKind = "commonjs"
+    outputFile = "node/index.js"
 }
+
+//compileKotlin2Js {
+//    kotlinOptions.outputFile = "node/index.js"
+//    kotlinOptions.moduleKind = "commonjs"
+//    kotlinOptions.sourceMap = true
+//}
