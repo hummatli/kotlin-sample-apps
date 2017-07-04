@@ -6,6 +6,9 @@ import java.util.*
  * Created by settar on 6/15/17.
  */
 
+val  ss = "" //Variables can be decleared in file
+var  sss = "" //
+
 //Functions -----------------------------
 //No parameter, no return
 fun helloWorld() {
